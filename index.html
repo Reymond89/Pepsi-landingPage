@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header__container">
+            <img class="header__logo" src="assets/img/logo.png" alt="pepsi">
+            <ul class="header__menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newstetter</a></li>
+                <li><a href="#">Contact</a></li>   
+            </ul>
+        </header>
+        <section class="cover__container">
+            <div class="cover__wrapper">
+                <div class="cover__text-left">
+                    <h1 class="cover__title">THAT'S WHAT <br><span class="cover__title-fontbig">I LIKE </span></h1>
+                    <p class="cover__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum asperiores inventore dolor doloremque commodi maxime consequuntur eos impedit dolores architecto aspernatur, optio animi recusandae consequatur a dicta libero fugit aut!</p>
+                    <button class="cover__button">VIEW ALL PRODUCTS</button>
+                </div>
+                <div class="cover__img-right">
+                    <img class="cover__img-big" src="assets/img/pepsi001.png" alt="">
+                    <ul class="social__media">
+                        <li><a href="#"><img class="social__icons" src="assets/img/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img class="social__icons" src="assets/img/instagram.png" alt=""></a></li>
+                        <li><a href="#"><img class="social__icons" src="assets/img/twitter.png" alt=""></a></li>
+                    </ul> 
+                </div>
+            </div>
+            <picture class="cover__img-small">
+                <img class="img__small" src="assets/img/pepsi001.png" onclick="imgPepsi('assets/img/pepsi001.png'); changeColor('#0062be')" alt="">
+                <img class="img__small" src="assets/img/pepsi002.png" onclick="imgPepsi('assets/img/pepsi002.png'); changeColor('#e60c2c')" alt="">
+                <img class="img__small" src="assets/img/pepsi003.png" onclick="imgPepsi('assets/img/pepsi003.png'); changeColor('#1e1e1e')" alt=""> 
+            </picture>
+        </section>
+    </div>
+
+    <script>
+        function imgPepsi(pepsi){
+            document.querySelector('.cover__img-big').src = pepsi;
+        }
+        function changeColor(color){
+            const change = document.querySelector('body');
+            change.style.background = color;
+        }
+
+    </script>
+
+</body>
+</html>
