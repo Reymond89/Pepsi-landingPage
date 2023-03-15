@@ -6,44 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepsi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylebubble.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header class="header__container">
-            <img class="header__logo" src="assets/img/logo.png" alt="pepsi">
-            <ul class="header__menu-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Newstetter</a></li>
-                <li><a href="#">Contact</a></li>   
-            </ul>
-        </header>
-        <section class="cover__container">
-            <div class="cover__wrapper">
-                <div class="cover__text-left">
-                    <h1 class="cover__title">THAT'S WHAT <br><span class="cover__title-fontbig">I LIKE </span></h1>
-                    <p class="cover__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum asperiores inventore dolor doloremque commodi maxime consequuntur eos impedit dolores architecto aspernatur, optio animi recusandae consequatur a dicta libero fugit aut!</p>
-                    <button class="cover__button">VIEW ALL PRODUCTS</button>
-                </div>
-                <div class="cover__img-right">
-                    <img class="cover__img-big" src="assets/img/pepsi001.png" alt="">
-                    <ul class="social__media">
-                        <li><a href="#"><img class="social__icons" src="assets/img/facebook.png" alt=""></a></li>
-                        <li><a href="#"><img class="social__icons" src="assets/img/instagram.png" alt=""></a></li>
-                        <li><a href="#"><img class="social__icons" src="assets/img/twitter.png" alt=""></a></li>
-                    </ul> 
-                </div>
+
+        <div class="bubbles">
+            <div class="burbuja_mediana">
+              <img class="burbuja bm" id="bm1" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bm" id="bm2" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bm" id="bm3" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bm" id="bm4" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bm" id="bm5" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bm" id="bm6" src="assets/img/bubble.png" alt="" />
             </div>
-            <picture class="cover__img-small">
-                <img class="img__small" src="assets/img/pepsi001.png" onclick="imgPepsi('assets/img/pepsi001.png'); changeColor('#0062be')" alt="">
-                <img class="img__small" src="assets/img/pepsi002.png" onclick="imgPepsi('assets/img/pepsi002.png'); changeColor('#e60c2c')" alt="">
-                <img class="img__small" src="assets/img/pepsi003.png" onclick="imgPepsi('assets/img/pepsi003.png'); changeColor('#1e1e1e')" alt=""> 
-            </picture>
-        </section>
+            <div class="burbuja_pequena">
+              <img class="burbuja bp" id="bp1" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bp" id="bp2" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bp" id="bp3" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bp" id="bp4" src="assets/img/bubble.png" alt="" />
+            </div>
+            <div class="burbuja_blur">
+              <img class="burbuja bb" id="bb1" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bb" id="bb2" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bb" id="bb3" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bb" id="bb4" src="assets/img/bubble.png" alt="" />
+              <img class="burbuja bb" id="bb5" src="assets/img/bubble.png" alt="" />
+            </div>
+        </div>
+            <header class="header__container">
+                <img class="header__logo" src="assets/img/logo.png" alt="pepsi">
+                <ul class="header__menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Newstetter</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </header>
+            <section class="cover__container">
+                <div class="cover__wrapper">
+                    <div class="cover__text-left">
+                        <h1 class="cover__title">THAT'S WHAT <br><span class="cover__title-fontbig">I LIKE </span></h1>
+                        <p class="cover__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum asperiores inventore dolor doloremque commodi maxime consequuntur eos impedit dolores architecto aspernatur, optio animi recusandae consequatur a dicta libero fugit aut!</p>
+                        <button class="cover__button">VIEW ALL PRODUCTS</button>
+                    </div>
+                    <div class="cover__img-right">
+                        <img class="cover__img-big" src="assets/img/pepsi001.png" alt="">
+                        <ul class="social__media">
+                            <li><a href="#"><img class="social__icons" src="assets/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img class="social__icons" src="assets/img/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img class="social__icons" src="assets/img/twitter.png" alt=""></a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <picture class="cover__img-small">
+                    <img class="img__small" id="blue" src="assets/img/pepsi001.png" onclick="imgPepsi('assets/img/pepsi001.png'); changeColor('#0062be')" alt="">
+                    <img class="img__small" id="red" src="assets/img/pepsi002.png" onclick="imgPepsi('assets/img/pepsi002.png'); changeColor('#e60c2c')" alt="">
+                    <img class="img__small" id="black" src="assets/img/pepsi003.png" onclick="imgPepsi('assets/img/pepsi003.png'); changeColor('#1e1e1e')" alt=""> 
+                </picture>
+            </section>
+       
     </div>
 
     <script>
@@ -56,6 +82,46 @@
         }
 
     </script>
+
+<script>
+    let red = document.getElementById("red");
+    let blue = document.getElementById("blue");
+    let black = document.getElementById("black");
+    let burbujas = document.querySelectorAll(".burbuja");
+    red.addEventListener("click", () => {
+      for (let i = 0; i < burbujas.length; i++) {
+        burbujas[i].style.filter = "opacity(0)";
+        setTimeout(() => {
+          burbujas[i].src = "assets/img/bubbleRed.png";
+          setTimeout(() => {
+            burbujas[i].style.filter = "opacity(1)";
+          }, 300);
+        }, 300);
+      }
+    });
+    blue.addEventListener("click", () => {
+      for (let i = 0; i < burbujas.length; i++) {
+        burbujas[i].style.filter = "opacity(0)";
+        setTimeout(() => {
+          burbujas[i].src = "assets/img/bubbleBlue.png";
+          setTimeout(() => {
+            burbujas[i].style.filter = "opacity(1)";
+          }, 300);
+        }, 300);
+      }
+    });
+    black.addEventListener("click", () => {
+      for (let i = 0; i < burbujas.length; i++) {
+        burbujas[i].style.filter = "opacity(0)";
+        setTimeout(() => {
+          burbujas[i].src = "assets/img/bubble.png";
+          setTimeout(() => {
+            burbujas[i].style.filter = "opacity(1)";
+          }, 300);
+        }, 300);
+      }
+    });
+  </script>
 
 </body>
 </html>

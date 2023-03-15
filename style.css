@@ -136,13 +136,17 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
+
 }
 .cover__img-small .img__small{
     width: 50px;
     cursor: pointer;
+    transition-duration: 0.3s;
     
 }
 .cover__img-small .img__small:hover{
     transform: translateY(-20%);
-    transition: 0.6s all ease-in-out;
+   
 }
+
+
